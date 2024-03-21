@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.element-center{
+	max-width : 700px;
+	margin: auto;
+}
+.elementCenter{
+	max-width : 700px;
+	margin: auto;
+}
+.marg{
+	margin:10px 20px;
+}	
+.center{
+	text-align: center;
+}
+.title-size{
+	max-width: 350px;
+}
+.bottom-line{
+	border-bottom: solid;
+}

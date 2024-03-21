@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.element-center{
+	max-width : 500px;
+	margin: auto;
+}
+.greenBar{
+	background-color: #ff6d62;
+}
+.padding-bar{
+	padding: 40px 0px;
+}
+.margin-auto{
+	margin: auto;
+}

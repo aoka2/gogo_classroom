@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+.modal-002__wrap input {
+    display: none;
+}
+
+.modal-002__open-label,
+.modal-002__close-label {
+    cursor: pointer;
+}
+
+.modal-002__open-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    padding: .8em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #2589d0;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.modal-002__open-label:hover {
+    background-color: #fff;
+    color: #2589d0;
+    outline: 1px solid #2589d0;
+}
+
+.modal-002 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+}
+
+.modal-002__open-input:checked + label + input + .modal-002 {
+    display: block;
+    animation: modal-002-animation .6s;
+}
+
+.modal-002__content-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 650px;
+    background-color: #fefefe;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.modal-002__close-label {
+    background-color: #777;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 1.6;
+    text-align: center;
+    display: table-cell;
+    position: fixed;
+    top: -15px;
+    right: -2%;
+    z-index: 99999;
+    font-size: 1.3em;
+}
+
+.modal-002__content {
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 39px 45px 40px;
+}
+
+.modal-002__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .45);
+    z-index: 1;
+}
+
+@keyframes modal-002-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .modal-002__open-label {
+        max-width: 90%;
+        padding: .94em 2.1em .94em 2.6em;
+    }
+
+    .modal-002__close-label {
+        top: -17px;
+        right: -4%;
+    }
+
+    .modal-002__content-wrap {
+        width: 90vw;
+    }
+
+    .modal-002__content {
+        padding: 33px 21px 35px;
+        max-width: 100%;
+    }
+}
+
+/*削除ボタン*/
+.button-038 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    padding: 5px;
+    margin: -8px 0 6px 18px;
+    border: none;
+    border-radius: 16px;
+    background-color: #e87373;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button-038:hover {
+    animation: anime-button-038 .3s linear;
+}
+
+@keyframes anime-button-038 {
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+}
+
+.workform{
+	text-align: center;
+}
+/*課題送信ボタン*/
+.button-030 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    margin: 18px auto;
+    padding: .9em 2em;
+    border: 1px solid #2589d0;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2589d0;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.button-030:hover {
+    animation: anima-button-030 1s;
+}
+
+@keyframes anima-button-030 {
+    0% {
+        box-shadow: 0 0 0 0 rgb(37 137 208 / 50%);
+    }
+    100% {
+        box-shadow: 0 0 0 1.2em rgb(0 0 0 / 0%);
+    }
+}
+
+/*課題作成画面*/
+.textbox-003-label,
+.textbox-003 {
+    color: #333;
+}
+
+.textbox-003-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: .9em;
+}
+
+.textbox-003 {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 3px;
+    background: #ebf1ff;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.textbox-003::placeholder {
+    color: #999;
+}
+
+/*課題タイトル*/
+.heading-001-2 {
+	margin: 10px 0 0 4px;
+    border-left: 5px solid #2589d0;
+    color: #333333;
+    font-size: 20px;
+    padding: 0 0 0 12px;
+}
+
+/*課題アクション*/
+.workBox{
+  	cursor: pointer;
+	transition: background-color .3s;
+	box-shadow: 8px 5px 2px 1px rgba(0, 0, 255, .2);
+}
+.workBox:hover{
+	background-color:#dfdfe8;
+}
+
+/*モーダル*/
+.modal-span {
+cursor: pointer;
+text-decoration: underline; 
+}
+.modal-outer {
+position: fixed;
+top: 0;
+left: 0;
+display: none; 
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.8);
+z-index: 10000; 
+}
+.modal-inner {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+overflow-y: auto;
+width: 95%;
+max-width: 60%;
+max-height: 65%;
+background: #fff;
+padding: 10px 20px; 
+}
+.show {
+display: block; 
+}
+.modal-inner-header {
+margin-bottom: 25px;
+}
+.close-btn-top {
+cursor: pointer;
+color: #000;
+font-size: 2em;
+position: absolute;
+top: -10px;
+right: 5px;
+}
+.close-btn-bottom {
+margin-bottom: 0;
+width:150px;
+margin:0 auto;
+text-align: center; 
+}
+.close-btn-bottom button {
+padding: 5px 10px; 
+cursor: pointer;
+}
+.bold {
+  font-weight: bold; 
+}
+

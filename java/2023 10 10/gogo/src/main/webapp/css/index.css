@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.element-center{
+	max-width : 500px;
+	margin: auto;
+}
+.marg{
+	margin:50px 20px;
+}
+.center{
+	text-align: center;
+}
+.title-size{
+	max-width: 350px;
+}
+h1{
+	margin-bottom:0px;
+	font-size: 140px !important;
+	opacity: 1;
+}
+
+html:hover h1{
+	margin-bottom: -260px;
+	font-size: 140px !important;
+	opacity: 0.33;
+	transition: all 300ms 0s ease;
+	
+}
